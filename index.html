@@ -53,7 +53,7 @@
             color: inherit;
         }
         
-        #googlesearch {
+        #search {
             max-width: 1100px;
             width: 100%;
             margin: auto;
@@ -78,8 +78,8 @@
 <body>
     <h1>~/</h1>
 
-    <form action="http://www.google.com/search" class="searchform" method="get" name="searchform">
-        <input id="googlesearch" autocomplete="on" class="form-controls search" name="q" placeholder="🔎" required="required"  type="text" autofocus />
+    <form action="https://duckduckgo.com" class="searchform" method="get" name="searchform">
+        <input id="search" autocomplete="on" class="form-controls search" name="q" placeholder="Search" required="required"  type="text" autofocus />
     </form>
 
     <div class="cardContainer">
@@ -137,7 +137,7 @@
 		document.getElementsByTagName('iframe')[0].src=document.getElementsByTagName('iframe')[0].src;
 		 document.getElementsByTagName('iframe')[1].src=document.getElementsByTagName('iframe')[1].src;
 	})()" style="font-size: 25px; display: block; margin: auto;">
-		🔄
+			Refresh	
 	</button>
     
     <div class="framecontainer">
@@ -147,7 +147,7 @@
 
 	<script>
         setTimeout(function() {
-            document.getElementById("googlesearch").focus();
+            document.getElementById("search").focus();
         }, 0);
     </script>
 </body>
